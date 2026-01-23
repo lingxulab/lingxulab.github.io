@@ -1,0 +1,195 @@
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #222;
+}
+header {
+  border-bottom: 1px solid #eee;
+}
+/* Unified heading styles */
+h1 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  margin-top: 1em; 
+  margin-bottom: 1em; 
+} 
+h2{
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700; 
+  margin-bottom: 0.2em;
+}
+p {
+  margin-top: 0;
+}
+.navbar {
+  background: #FFF;
+  padding: 1rem 0rem 0rem 0rem;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.28rem;
+}
+.nav-links a {
+  text-decoration: none;
+  /*color: #007acc;*/
+  color: #222;
+  font-size: 1.28rem;
+  font-weight: 400;
+}
+.logo {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 1.68rem;
+  font-weight: 600;
+  color: #222;
+  text-decoration: none;
+}
+.home-section {
+  max-width: 960px;
+  margin: 1rem auto;
+  padding: 0 0;
+}
+.gray-wrapper {
+  /*background-color: #f8f8f8; /* Or #fdfdfd / #f0f2f5 */
+  border: 1px solid #eee; /* light gray border */ 
+  /*background-color: #FcFcFc;*/
+  padding: 0.66rem 0.66rem;
+  border-radius: 16px;
+}
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 3.6rem;
+}
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+  align-self: center;
+  /*align-self: flex-start;*/
+}
+.intro-text {
+  flex: 1;
+  font-family: 'Source Serif Pro', serif;
+  min-width: 250px;
+}
+.intro-text p {
+  font-family: 'Inter', serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+/* Align the entire highlights section under the intro text */
+.aligned-block {
+  margin-left: calc(200px + 3.6rem); /* profile image width + gap */
+}
+.name-line {
+  border: none;
+  border-top: 2px solid #ccc;
+  margin-top: 0px;       /* control gap here */
+  margin-bottom: 6px;
+}
+.member-line {
+  border: none;
+  border-top: 2px solid #eee;
+  margin-top: 10px;       /* control gap here */
+  margin-bottom: 10px;
+  width: 100%;
+  flex-basis: 100%;
+}
+/* Highlight section formatting */
+.highlights {
+  margin-top: 0;
+  font-family: 'Source Serif Pro', serif;
+}
+/* Text inside the highlights section */
+.highlights p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+/* Layout for the list of highlights */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* more breathing space between items */
+}
+/* Each highlight item = image + description */
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.6rem; /* match .intro gap */
+  flex-wrap: wrap;
+}
+/* Container to fix image alignment with profile image */
+.news-image {
+  width: 200px; /* same as .profile-img */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+/* Right-side text block */
+.news-text {
+  flex: 1;
+  min-width: 250px;
+  /*font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;*/
+  margin-top: 0;
+}
+/* Responsive: align everything in one column */
+@media (max-width: 768px) {
+  .aligned-block {
+    margin-left: 0;
+  }
+  .news-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .news-image {
+    width: 100%;
+    height: auto;
+  }
+}
+.map-container {
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.pub-icon {
+  height: 1em;
+  width: auto;
+  /*vertical-align: text-bottom;*/
+  vertical-align: text-center;
+  margin-left: 0.1em;
+}
+#pub-list li:not(:last-child) {
+  border-bottom: 0px solid #eee;
+  padding-bottom: 0.66rem;
+}
