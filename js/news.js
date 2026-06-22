@@ -23,10 +23,11 @@ function loadHighlights(path) {
         div.className = "news-item";
   
         const imageHTML = item.image
-          ? `<img src="assets/highlights/${item.image}" alt="${item.title}" class="news-image" />`
+          ? `<img src="assets/highlights/${item.image}" alt="${item.title}" class="news-image" loading="lazy" decoding="async" />`
           : "";
   
         let meta = "";
+        let worktitle = "";
         if (item.type === "publication") {
           meta = `${item.authors}. ${item.title} (${item.year}), <em>${linkify(item.journal)}</em>.`;
           worktitle = `Our work is published in <em>${linkify(item.journal)}</em>!`;
@@ -39,7 +40,7 @@ function loadHighlights(path) {
         const dateStr = item.date ? formatDateISO(item.date) : '';
   
         const link = item.link
-          ? `<a href="${item.link}" target="_blank">Read more</a>`
+          ? `<a href="${item.link}" target="_blank" rel="noopener noreferrer">Read more</a>`
           : "";
   
         div.innerHTML = `

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="inner-page">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xu Lab | News</title>
+  <meta name="description" content="News and research highlights from the Xu Lab." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
 </head>
@@ -17,40 +20,23 @@
           <li><a href="research.html">Research</a></li>
           <li><a href="member.html">Member</a></li>
           <li><a href="publications.html">Publications</a></li>
-          <li><a href="news.html">News</a></li>
+          <li><a href="news.html" aria-current="page">News</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        background-image: url('assets/images/research.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-    </style>
   </header>
   <main class="home-section">
     <h1>News and highlights</h1>
-    <section class="gray-wrapper">
-      <section class="highlights">
-        <div id="news-list" class="news-list"></div>
-      </section>
+    <section class="highlights">
+      <div id="news-list" class="news-list"></div>
     </section>
-    <script src="js/news.js"></script>
+    <script src="js/news.js" defer></script>
   </main>
       <!-- Footer -->
       <footer>
         &copy; 2026 Ling Xu at UF Scripps. All Rights Reserved.
       </footer>
-      <script>
-        // Set the current year dynamically
-        document.getElementById("currentYear").textContent = new Date().getFullYear();
-      </script>
 </body>
 </html>

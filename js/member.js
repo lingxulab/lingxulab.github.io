@@ -23,7 +23,7 @@ function loadHighlights(path) {
         div.className = "news-item";
   
         const imageHTML = item.image
-          ? `<img src="assets/members/${item.image}" alt="${item.title}" class="news-image" />`
+          ? `<img src="assets/members/${item.image}" alt="${item.title}" class="news-image" loading="lazy" decoding="async" />`
           : "";
 
         div.innerHTML = `
