@@ -158,6 +158,7 @@ a {
   text-wrap: balance;
 }
 .hero-copy {
+  text-align: center;
   max-width: 900px;
   color: var(--ink);
   font-size: clamp(1.02rem, 1.55vw, 1.12rem);
